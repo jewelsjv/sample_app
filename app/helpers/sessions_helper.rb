@@ -15,7 +15,7 @@ module SessionsHelper
 		@current_user = user
 	end
 
-	def signed_in_user
+	def signed_in_user #used in Users and Microposts
 		unless signed_in?
 			store_location
 			redirect_to signin_url, notice: "Please sign in."

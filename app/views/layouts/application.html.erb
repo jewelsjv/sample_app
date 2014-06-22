@@ -13,7 +13,7 @@
     <div class="container">
         <% flash.each do |key, value| %>
           <%= content_tag(:div, value, class:"alert alert-#{key}") %>
-<!--           <div class="alert alert-<%= key %>"><%= value %></div> --> <!-- differnt way of writing the above -->
+<!--           <div class="alert alert-<%= key %>"><%= value %></div> --> <!-- different way of writing the above -->
         <% end %>
         <%= yield %>
         <%= render 'layouts/footer' %>
